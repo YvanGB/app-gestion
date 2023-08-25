@@ -1,0 +1,90 @@
+@import url('https://fonts.googleapis.com/css2?family=Belanosima:wght@600;700&family=Lato:wght@300;400;700;900&display=swap');
+
+body{
+  font-family: 'Lato', sans-serif;
+  font-weight: 700;
+}
+
+.profile-icon {
+  display: inline-block;
+  position: relative;
+}
+
+.profile-icon-inner {
+  font-size: 20px; /* Diminuer la taille de l'icône */
+  border-radius: 50%; /* Mettre en forme de cercle */
+  position: relative;
+  z-index: 1;
+}
+
+.profile-icon-inner::before {
+  content: ''; /* Masquer la flèche */
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: transparent;
+  z-index: -1;
+}
+
+.brand-style {
+  font-weight: 900;
+  font-size: 30px;
+  font-family: 'Belanosima', sans-serif;
+  color: #fac369;
+}
+
+.brand-style:hover {
+  color: #dd9933;
+}
+
+.nav-item {
+  font-weight: 900;
+  font-family: 'Lato', sans-serif;
+  color: #fac369;
+}
+
+.nav-item:hover {
+  color: #dd9933;
+  font-size: larger;
+}
+
+.custom-input{
+  outline: none;
+}
+
+.custom-icon-button {
+  border-color: white;
+}
+
+.custom-icon-button:hover {
+  background-color: #dd9933;
+}
+
+.custom-icon-button:hover .custom-icon {
+  color: white;
+}
+
+.custom-icon {
+  color: #dd9933;
+}
+
+.custom-toggle .navbar-toggler-icon {
+  color: #dd9933; /* Couleur de votre choix */
+}
+
+.category-card {
+  background-color: #f1f1f1;
+  padding: 10px;
+  margin-bottom: 10px;
+  border-radius: 5px;
+  height: 200px;
+}
+
+.category-cards-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: flex-start;
+}
